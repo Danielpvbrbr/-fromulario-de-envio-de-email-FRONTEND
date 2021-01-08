@@ -20,7 +20,7 @@ function App() {
   function send(){
     const formData = new FormData();
     Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-    axios.post('http://localhost:3030/send', 
+    axios.post(process.env.REACT_APP_API_URL, 
               formData,
               {
                 headers: {
