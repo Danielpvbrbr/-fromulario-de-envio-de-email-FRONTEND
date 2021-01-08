@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, {useState,} from 'react';
 import './App.css';
 import axios from 'axios';
 
-function App() {
+export default function App() {
   const [campos, setCampos] = useState({
       nome: '',
       email: '',
@@ -57,4 +57,4 @@ function App() {
   );
 }
 
-export default App;
+
