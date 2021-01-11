@@ -20,7 +20,7 @@ export default function App() {
   function send(){
     const formData = new FormData();
     Object.keys(campos).forEach(key => formData.append(key, campos[key]));
-    axios.post(process.env.REACT_APP_API_URL, 
+    axios.post('https://formulario-de-envio-email.herokuapp.com/send', 
               formData,
               {
                 headers: {
